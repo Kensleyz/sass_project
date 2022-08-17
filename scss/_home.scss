@@ -9,8 +9,8 @@
             to right,
             rgba($primary-color, 0.9),
             rgba($primary-color, 0.3)
-        )
-        rgb(81, 80, 80) center top;
+        ),
+        url(../img/img2.jpg) right top;
     background-size: cover;
 
     &__name {
@@ -29,6 +29,10 @@
     .social-icons {
         display: flex;
         flex-direction: row;
+
+        a {
+            color: set-text-color($primary-color);
+        }
     }
     
     footer {

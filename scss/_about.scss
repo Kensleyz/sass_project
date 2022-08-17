@@ -1,7 +1,7 @@
 .about {
     padding-bottom: 2rem;
     height: 100vh;
-    background-color: cadetblue;
+    //background-color: cadetblue;
     overflow: scroll;
 
     &_bio-image {
@@ -12,8 +12,8 @@
             to right,
             rgba($primary-color, 0.9),
             rgba($primary-color, 0.3)
-        )
-        rgb(81, 80, 80) center top;
+        ),
+        url(../img/img1.jpg) center top;
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -62,12 +62,17 @@
     .social-icons {
         display: flex;
         flex-direction: column;
+
+        a {
+            color: $secondary-color;
+        }
     }
     
     footer {
         transform: 
         rotate(90deg)
         translate(-3rem, -5rem);
+        color: $secondary-color;
     }
 }
 

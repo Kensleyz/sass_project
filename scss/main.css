@@ -10,7 +10,7 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)) rgb(81, 80, 80) center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/img2.jpg) right top;
   background-size: cover;
 }
 .home__name {
@@ -27,6 +27,9 @@
 .home .social-icons {
   display: flex;
   flex-direction: row;
+}
+.home .social-icons a {
+  color: white;
 }
 .home footer {
   transform: rotate(90deg) translate(-3rem, -5rem);
@@ -152,13 +155,12 @@
 .about {
   padding-bottom: 2rem;
   height: 100vh;
-  background-color: cadetblue;
   overflow: scroll;
 }
 .about_bio-image {
   height: 50vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)) rgb(81, 80, 80) center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/img1.jpg) center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -201,20 +203,24 @@
   display: flex;
   flex-direction: column;
 }
+.about .social-icons a {
+  color: rgb(0, 213, 255);
+}
 .about footer {
   transform: rotate(90deg) translate(-3rem, -5rem);
+  color: rgb(0, 213, 255);
 }
 
 .workhistory {
   padding-bottom: 2rem;
   height: 100vh;
-  background-color: cadetblue;
   overflow: scroll;
+  transition: all 0.5s ease-in-out;
 }
 .workhistory_bio-image {
   height: 30vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)) rgb(81, 80, 80) center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/work.jpg) right top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -237,6 +243,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
+  transition: all 0.5s ease-in-out;
 }
 .workhistory .jobs__job {
   background: #5a5a5a;
@@ -268,20 +275,23 @@
   display: flex;
   flex-direction: column;
 }
+.workhistory .social-icons a {
+  color: rgb(0, 213, 255) !important;
+}
 .workhistory footer {
   transform: rotate(90deg) translate(-3rem, -5rem);
+  color: rgb(0, 213, 255) !important;
 }
 
 .education {
   padding-bottom: 2rem;
   height: 100vh;
-  background-color: cadetblue;
   overflow: scroll;
 }
 .education_bio-image {
   height: 30vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)) rgb(81, 80, 80) center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/education.jpg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -335,20 +345,23 @@
   display: flex;
   flex-direction: column;
 }
+.education .social-icons a {
+  color: rgb(0, 213, 255);
+}
 .education footer {
   transform: rotate(90deg) translate(-3rem, -5rem);
+  color: rgb(0, 213, 255);
 }
 
 .contact {
   padding-bottom: 2rem;
   height: 100vh;
-  background-color: cadetblue;
   overflow: scroll;
 }
 .contact_bio-image {
   height: 30vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)) rgb(81, 80, 80) center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/contact.jpg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -378,8 +391,13 @@
 }
 .contact .social-icons {
   display: flex;
-  position: relative;
   flex-direction: row;
+}
+.contact .social-icons a {
+  color: rgb(0, 213, 255);
+}
+.contact footer {
+  color: rgb(0, 213, 255);
 }
 
 .hide {

@@ -1,8 +1,9 @@
 .workhistory {
     padding-bottom: 2rem;
     height: 100vh;
-    background-color: cadetblue;
+    //background-color: cadetblue;
     overflow: scroll;
+    @include transition-ease;
 
     &_bio-image {
         height: 30vh;
@@ -12,8 +13,8 @@
             to right,
             rgba($primary-color, 0.9),
             rgba($primary-color, 0.3)
-        )
-        rgb(81, 80, 80) center top;
+        ),
+        url(../img/work.jpg) right top;
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -40,6 +41,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2rem;
+        @include transition-ease;
         
         &__job {
             background: lighten($primary-color, 20%);
@@ -78,12 +80,17 @@
     .social-icons {
         display: flex;
         flex-direction: column;
+        
+        a {
+            color: $secondary-color !important;
+        }
     }
     
     footer {
         transform: 
         rotate(90deg)
         translate(-3rem, -5rem);
+        color: $secondary-color !important;
     }
 }
 
