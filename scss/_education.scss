@@ -54,20 +54,18 @@
 
             h6 {
                 margin: 0.3rem 0;
-                line-height: 1rem;                
+                border-bottom: 2px solid $secondary-color;
+                line-height: 1.5rem;             
             }
 
             p {
-                border-top: 2px solid $secondary-color;
-                line-height: 1.5rem;
+                
                 text-align: center;
                 font-size: 0.8rem;
-                margin-top: 0.5rem;
+                margin-top: 1rem;
+                line-height: 1rem;
             }
 
-            ul {
-                border-top: 2px solid $secondary-color;
-            }
 
             ul > li {
                 line-height: 1rem;

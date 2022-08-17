@@ -188,8 +188,10 @@
   padding: 0.5rem;
   border-bottom: 5px solid rgb(0, 213, 255);
   border-radius: 5%;
-  align-items: center;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .about .skills__skill span {
   font-size: 5rem;
@@ -241,19 +243,26 @@
   padding: 1rem;
   border-bottom: 5px solid rgb(0, 213, 255);
   border-radius: 5%;
+  height: 30vh;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.workhistory .jobs__job:hover {
+  height: 100%;
 }
 .workhistory .jobs__job h2, .workhistory .jobs__job h3 {
   margin: 0.5rem 0;
 }
 .workhistory .jobs__job h6 {
   margin: 0.3rem 0;
+  border-bottom: 2px solid rgb(0, 213, 255);
+  line-height: 1.5rem;
 }
 .workhistory .jobs__job p {
-  border-top: 2px solid rgb(0, 213, 255);
   line-height: 1.5rem;
   text-align: center;
   font-size: 0.8rem;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 .workhistory .social-icons {
   display: flex;
@@ -307,17 +316,14 @@
 }
 .education .cards__card h6 {
   margin: 0.3rem 0;
-  line-height: 1rem;
+  border-bottom: 2px solid rgb(0, 213, 255);
+  line-height: 1.5rem;
 }
 .education .cards__card p {
-  border-top: 2px solid rgb(0, 213, 255);
-  line-height: 1.5rem;
   text-align: center;
   font-size: 0.8rem;
-  margin-top: 0.5rem;
-}
-.education .cards__card ul {
-  border-top: 2px solid rgb(0, 213, 255);
+  margin-top: 1rem;
+  line-height: 1rem;
 }
 .education .cards__card ul > li {
   line-height: 1rem;
@@ -380,6 +386,43 @@
   visibility: hidden;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    transform: translateY(0);
+    height: 100%;
+    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)) rgb(81, 80, 80) center top;
+    text-align: right;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.5rem;
+  }
+  .text-secondary {
+    font-size: 3rem;
+  }
+  .about__bio {
+    font-size: 1.5rem;
+  }
+  .skills {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .jobs {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
 html {
   background-color: pink;
 }

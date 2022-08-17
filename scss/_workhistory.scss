@@ -40,13 +40,21 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2rem;
-        //background-color: black;
-
+        
         &__job {
             background: lighten($primary-color, 20%);
             padding: 1rem;
             border-bottom: 5px solid $secondary-color;
             border-radius: 5%;
+            height: 30vh;
+            overflow: hidden;
+            @include transition-ease;
+
+            &:hover {
+                height: 100%;
+                //overflow: hidden;
+            }
+
 
             h2, h3 {
                 margin: 0.5rem 0;
@@ -54,15 +62,16 @@
 
             h6 {
                 margin: 0.3rem 0;
+                border-bottom: 2px solid $secondary-color;
+                line-height: 1.5rem;
                 
             }
 
             p {
-                border-top: 2px solid $secondary-color;
                 line-height: 1.5rem;
                 text-align: center;
                 font-size: 0.8rem;
-                margin-top: 0.5rem;
+                margin-top: 1rem;
             }
         }
     }
