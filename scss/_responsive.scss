@@ -1,44 +1,14 @@
 @include media-md {
-    .menu-btn {
-        visibility: hidden;
-    }
 
-    .nav {
-        visibility: visible;
-
-        .menu-nav {
-            display: block;
-            transform: translateY(0);
-            height: 100%;
-            background: 
-            linear-gradient(
-                to right,
-                rgba($primary-color, 0.9),
-                rgba($primary-color, 0.3)
-            )
-            rgb(81, 80, 80) center top;
-            text-align: right;
-
-            &__item {
-                display: inline;
-                padding-right: 1.5rem;
-            }
-
-            &__link {
-                font-size: 1.5rem;
-            }
-        }
-    }
 
     .text-secondary {
         font-size: 3rem;
     }
 
-    .about__bio {
+    .about_bio-image {
         font-size: 1.5rem;
+        height: 60vh;
     }
-
-
 
     .skills {
        grid-template-columns: repeat(3, 1fr) !important; 
